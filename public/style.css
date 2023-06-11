@@ -1,0 +1,140 @@
+:root {
+    --page1: #A31621;
+    --text1: #60DED4;
+    --page2: #FFFFFF;
+    --text2: #030807;
+    --page3: #CED3DC;
+    --text3: #312C23;
+    --page4: #343434;
+    --text4: #CBCBCB;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+nav {
+    min-width: 320px;
+    width: 100vw;
+    height: 90px;
+    padding: 0px 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+}
+nav p {
+    font-size: 2rem;
+}
+nav ul {
+    min-width: 120px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: inherit;
+}
+main {
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+main::-webkit-scrollbar {
+    display: none;
+}
+main section {
+    min-width: 320px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+main section .container {
+    min-width: 320px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main section:nth-child(1) {
+    background-color: var(--page1);
+    color: var(--text1);
+}
+main section:nth-child(2) {
+    background-color: var(--page2);
+    color: var(--text2);
+}
+main section:nth-child(3) {
+    background-color: var(--page3);
+    color: var(--text3);
+}
+main section:nth-child(4) {
+    background-color: var(--page4);
+    color: var(--text4);
+}
+main section .container div {
+    transform: rotate(90deg);
+}
+main section .container div  p {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+h2 {
+    font-size: 12.6rem;
+    text-align: center;
+}
+section#firts nav {
+    color: var(--text1);
+}
+section#first div + div {
+    background-color: var(--text1);
+}
+section#second div + div {
+    width: 30%;
+}
+section#second nav {
+    color: var(--text2);
+}
+section#third div + div {
+    width: 60%;
+}
+section#third nav {
+    color: var(--text3);
+}
+section#fourth div + div {
+    background-color: var(--text4);
+    width: 70%;
+}
+section#fourth nav {
+    color: var(--text4);
+}
+.progress-bar {
+    height: 2px;
+    position: absolute;
+    background-color: var(--text2);
+    bottom: 18vh;
+}

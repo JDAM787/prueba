@@ -1,0 +1,17 @@
+nav {
+    padding: 0 10px;
+}
+nav p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+main section .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+}
+h2 {
+    font-size: 7.5rem;
+}
